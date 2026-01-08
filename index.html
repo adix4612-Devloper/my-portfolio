@@ -12,7 +12,34 @@
       box-sizing: border-box;
       font-family: Arial, sans-serif;
     }
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+body > * {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+body > *:nth-child(1) { animation-delay: 0.1s; }
+body > *:nth-child(2) { animation-delay: 0.2s; }
+body > *:nth-child(3) { animation-delay: 0.3s; }
+body > *:nth-child(4) { animation-delay: 0.4s; }
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 255, 213, 0.15);
+}
     body {
       background: #0f0f0f;
       color: #ffffff;
