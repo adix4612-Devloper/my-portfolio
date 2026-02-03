@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Adi | Creative Developer</title>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Adi | Future Developer</title>
+<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<canvas id="particles"></canvas>
-<div class="cursor-glow"></div>
-<button id="themeToggle">🌙</button>
+<div class="bg"></div>
+<div class="parallax"></div>
 
 <nav>
-  <h1 class="logo">Adi<span>Dev</span></h1>
+  <div class="logo">Adi<span>Dev</span></div>
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -23,46 +22,36 @@
 </nav>
 
 <section class="hero">
-  <h2>Hi, I'm</h2>
-  <h1>Adi</h1>
-  <h3><span class="typing"></span></h3>
-  <button onclick="scrollToSection('projects')">Explore Work</button>
+  <h1>Hello, I'm Adi</h1>
+  <h2>I am a <span class="typing"></span></h2>
+  <button onclick="go('projects')">See My Work</button>
 </section>
 
 <section id="about" class="section reveal">
   <div class="glass">
     <h2>About Me</h2>
-    <p>I build animated, interactive and meaningful digital experiences.</p>
+    <p>I create powerful, animated, interactive web experiences that feel alive and futuristic.</p>
   </div>
 </section>
 
 <section id="skills" class="section reveal">
   <h2>Skills</h2>
-  <div class="skills-grid">
-    <div class="glass">HTML</div>
-    <div class="glass">CSS</div>
-    <div class="glass">JavaScript</div>
-    <div class="glass">Python</div>
-    <div class="glass">UI Design</div>
+  <div class="orbs">
+    <div class="orb">HTML</div>
+    <div class="orb">CSS</div>
+    <div class="orb">JS</div>
+    <div class="orb">Python</div>
+    <div class="orb">UI/UX</div>
   </div>
 </section>
 
 <section id="projects" class="section reveal">
   <h2>Projects</h2>
   <div class="projects">
-    <div class="card tilt" onclick="openModal('AI Chat App','Real-time AI assistant with modern UI.')">AI Chat App</div>
-    <div class="card tilt" onclick="openModal('Portfolio Builder','Auto-generates animated portfolios.')">Portfolio Builder</div>
-    <div class="card tilt" onclick="openModal('Game UI','Game-style animated interface.')">Game UI</div>
-  </div>
-</section>
-
-<section class="section reveal">
-  <h2>My Journey</h2>
-  <div class="timeline">
-    <div class="timeline-item">Started Learning Web Dev</div>
-    <div class="timeline-item">Built First Portfolio</div>
-    <div class="timeline-item">Created Animated Projects</div>
-    <div class="timeline-item">Becoming Creative Developer</div>
+    <div class="project">AI Assistant UI</div>
+    <div class="project">Animated Portfolio Tool</div>
+    <div class="project">Game Interface</div>
+    <div class="project">Web Animation Library</div>
   </div>
 </section>
 
@@ -73,16 +62,6 @@
     <p>GitHub: github.com/yourname</p>
   </div>
 </section>
-
-<footer>© 2026 Adi | Creative Dev</footer>
-
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">×</span>
-    <h2 id="modalTitle"></h2>
-    <p id="modalText"></p>
-  </div>
-</div>
 
 <script src="script.js"></script>
 </body>
